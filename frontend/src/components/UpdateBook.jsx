@@ -18,7 +18,7 @@ const UpdateBook = () => {
 
   const fetchBooks = async () => {
     try {
-      const res = await axios.get('http://localhost:9000/books');
+      const res = await axios.get('https://bookappproject-rlyv.onrender.com/books');
       setBooks(res.data);
     } catch (error) {
       console.error(error);
